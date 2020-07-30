@@ -1,0 +1,29 @@
+.header
+	display: flex
+	align-items: flex-end
+	font-size: .8vw
+	position: fixed
+	top: 0
+	left: 0
+	margin: 3.125vw
+	height: 1.3vw
+	width: 93.75vw
+	z-index: 3
+	&__navigation
+		&:last-child
+			margin-left: auto
+	&__menu
+		display: flex
+	&__link
+		letter-spacing: .1vw
+		a
+			color: white
+		&:not(:first-child)
+			margin-left: .75vw
+	&__logo
+		height: 100%
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		fill: white

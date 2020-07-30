@@ -1,0 +1,59 @@
+.hero
+	height: 100vh
+	width: 100%
+	position: relative
+	overflow: hidden
+	&__image
+		display: block
+		width: 120vw
+		height: 120vh
+		position: absolute
+		left: 50%
+		top: 50%
+		object-fit: cover
+		transition: .3s linear 
+	&__text
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		color: white
+		font-size: 12vw
+		white-space: nowrap
+		font-family: Teko
+		letter-spacing: 20px
+	&__card
+		transition-duration: .4s
+		width: 45vh
+		height: 60vh
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		z-index: 2
+		perspective: 100vh
+	&__image-wrapper
+		position: relative
+		height: 100%
+		width: 100%
+		z-index: -1
+		overflow: hidden
+		img
+			width: 120vw
+			height: 120vh	
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+	&__rotation
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		overflow: hidden
+		transition: .3s linear 
+		img
+			width: 100%
+			height: 100%
+
